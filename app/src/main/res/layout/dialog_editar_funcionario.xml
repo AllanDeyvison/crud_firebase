@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:labelFor="@+id/editTextNome"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nome completo do funcionário"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:labelFor="@+id/editTextEmail"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="exemplo@email.com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo"
+        android:labelFor="@+id/editTextCargo"/>
+
+    <EditText
+        android:id="@+id/editTextCargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cargo do funcionário"
+        android:inputType="text" />
+
+</LinearLayout>
