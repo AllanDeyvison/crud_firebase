@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+//        val btnFuncionarios: Button = findViewById(R.id.btnGerenciarFuncionarios)
+        val btnEmpresas: Button = findViewById(R.id.btnGerenciarEmpresas)
+
         val edtNome  = findViewById<EditText>(R.id.edtNome)
         val edtEmail = findViewById<EditText>(R.id.edtEmail)
         val edtCargo = findViewById<EditText>(R.id.edtCargo)
@@ -25,6 +29,19 @@ class MainActivity : AppCompatActivity() {
         // abre a nova Activity
         btnAbrirLista.setOnClickListener {
             startActivity(Intent(this, TelaLista::class.java))
+        }
+
+//        btnFuncionarios.setOnClickListener {
+//            // A sua tela antiga de lista de funcionários agora é para isso
+//            val intent = Intent(this, TelaLista::class.java)
+//            startActivity(intent)
+//        }
+
+
+        btnEmpresas.setOnClickListener {
+            // A nova tela de empresas
+            val intent = Intent(this, TelaCadastroEmpresa::class.java)
+            startActivity(intent)
         }
 
         btnCad.setOnClickListener {

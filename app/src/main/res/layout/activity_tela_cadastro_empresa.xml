@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".TelaCadastroEmpresa">
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtTitulo2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:gravity="center"
-        android:text="Cadastro de Funcionário"
+        android:text="Cadastro de Empresas"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,74 +22,54 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtNome"
+        android:id="@+id/edtNome2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Nome"
-        app:layout_constraintTop_toBottomOf="@id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@id/txtTitulo2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/edtCnpj"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/edtNome"
+        android:hint="CNPJ"
+        app:layout_constraintTop_toBottomOf="@id/edtNome2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"/>
 
-    <EditText
-        android:id="@+id/edtCargo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Cargo"
-        app:layout_constraintTop_toBottomOf="@id/edtEmail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="12dp"/>
 
     <Button
-        android:id="@+id/btnCadastrar"
+        android:id="@+id/btnCadastrar2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        app:layout_constraintTop_toBottomOf="@id/edtCargo"
+        app:layout_constraintTop_toBottomOf="@id/edtCnpj"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/btnAbrirLista"
+        android:id="@+id/btnAbrirLista2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Abrir lista"
-        app:layout_constraintTop_toBottomOf="@id/btnCadastrar"
+        app:layout_constraintTop_toBottomOf="@id/btnCadastrar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp" />
 
-<!--    <Button-->
-<!--        android:id="@+id/btnGerenciarFuncionarios"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="22dp"-->
-<!--        android:text="Gerenciar Funcionários"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btnGerenciarEmpresas" />-->
-
     <Button
-        android:id="@+id/btnGerenciarEmpresas"
+        android:id="@+id/btnGerenciarFuncionario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Cadastrar Empresas"
+        android:text="Cadastrar Funcionário"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAbrirLista" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAbrirLista2" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
